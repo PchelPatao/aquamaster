@@ -18,7 +18,7 @@ export const Button = ({name, withoutIcon = false, padding, onClick, isActive = 
                 className={`w-full flex flex-row ${withoutIcon ? 'justify-center' : ''}`}
                 onClick={onClick}
             >
-                    <div className='box-border md:p-[10px] p-[9px] w-full flex whitespace-nowrap items-center text-[11px] md:text-[20px] justify-center'>
+                    <div className='box-border md:p-[10px] p-[9px] w-full h-full flex whitespace-nowrap items-center text-[11px] md:text-[20px] justify-center'>
                         {name}
                     </div>
             </button>

@@ -28,7 +28,7 @@ export const Header = ({onScrollToRef,
             {!isMobile && <div className=''><img className='rounded-r-[30px]' width={'700'} src={sideImg} alt="nasos"/></div>}
             <div className='md:w-[1200px] md:pr-[100px]'>
                 {isMobile &&
-                    <div className='bg-[#4CBFCC] flex flex-row h-[40px] rounded-b-[10px] items-center justify-end text-white'>
+                    <div className='bg-[#4CBFCC] flex flex-row h-[40px] rounded-b-[10px] items-center pr-[10px] justify-end text-white'>
                         <text className='pr-[10px]'><em>+7(931) 233-39-11</em></text>
                         <img src={whatsapp} alt={'whatsapp'} className='w-[30px]'></img>
                     </div>}

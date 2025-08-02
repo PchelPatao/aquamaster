@@ -76,40 +76,40 @@ function App() {
                 </HeaderBlock>
                 <div className='flex pt-[20px] justify-center gap-[20px] md:gap-[50px] md:pl-[80px] md:w-[1700px] md:h-[590px]'>
                      <div className='pl-[14px] flex flex-col md:flex-row md:gap-[50px] flex-1 gap-[20px]'>
-                        <div className=' bg-[#4CBFCC] text-white h-[220px] md:size-[400px] rounded-[40px] md:rounded-[90px] ' style={{
+                        <div className=' bg-[#4CBFCC] text-white size-[190px] md:size-[400px] rounded-[40px] md:rounded-[90px] ' style={{
                             boxShadow: '8px 8px 4px 0 rgba(0, 0, 0, 0.25)'
                         }}>
                             <div className='flex flex-col justify-center items-center w-full h-full p-5'>
-                                <img src={success} className='w-[80px]' alt={'Качество'}></img>
+                                <img src={success} className='w-[60px]' alt={'Качество'}></img>
                                 <text className=' text-[16px] md:text-[34px]'>Качество</text>
                                 <text className=' text-[12px] md:text-[24px]'>Решаем любые проблемы со скважинами самыми оптимальными способами.</text>
                             </div>
                         </div>
-                        <div className=' bg-[#4CBFCC] text-white rounded-[40px] md:size-[400px] h-[220px] md:rounded-[90px]' style={{
+                        <div className=' bg-[#4CBFCC] text-white rounded-[40px] md:size-[400px] size-[190px] md:rounded-[90px]' style={{
                             boxShadow: '8px 8px 4px 0 rgba(0, 0, 0, 0.25)'
                         }}>
                             <div className='flex flex-col justify-center items-center w-full h-full p-5'>
-                                <img src={card} className='w-[80px]' alt={'карточка'}></img>
+                                <img src={card} className='w-[60px]' alt={'карточка'}></img>
                                 <text className=' text-[16px] md:text-[34px]'>Без предоплат</text>
                                 <text className=' text-[12px] md:text-[24px]'>Фиксированная договором цена. Оплата по факту выполнения работ.</text>
                             </div>
                         </div>
                     </div>
                     <div className='flex flex-col md:flex-row flex-1 gap-[20px] md:gap-[50px] pr-[14px]'>
-                        <div className=' bg-[#4CBFCC] text-white rounded-[40px] md:size-[400px] h-[220px] md:rounded-[90px]' style={{
+                        <div className=' bg-[#4CBFCC] text-white rounded-[40px] md:size-[400px] size-[190px] md:rounded-[90px]' style={{
                         boxShadow: '8px 8px 4px 0 rgba(0, 0, 0, 0.25)'
                     }}>
                         <div className='flex flex-col justify-center items-center w-full h-full p-5'>
-                            <img src={shield} className='w-[80px]' alt={'щит'}></img>
+                            <img src={shield} className='w-[60px]' alt={'щит'}></img>
                             <text className=' text-[16px] md:text-[34px]'>Гарантия</text>
                             <text className=' text-[12px] md:text-[24px]'>Мы предоставляем гарантию в 1 год на все выполненные нами работы.</text>
                         </div>
                         </div>
-                        <div className=' bg-[#4CBFCC] text-white rounded-[40px] md:size-[400px] h-[220px] md:rounded-[90px]' style={{
+                        <div className=' bg-[#4CBFCC] text-white rounded-[40px] md:size-[400px] size-[190px] md:rounded-[90px]' style={{
                             boxShadow: '8px 8px 4px 0 rgba(0, 0, 0, 0.25)'
                         }}>
                             <div className='flex flex-col justify-center items-center w-full h-full p-5'>
-                                <img src={banknote} className='w-[80px]' alt={'купюра'}></img>
+                                <img src={banknote} className='w-[60px]' alt={'купюра'}></img>
                                 <text className=' text-[16px] md:text-[34px]'>Экономия</text>
                                 <text className=' text-[12px] md:text-[24px]'>Мы всегда подбираем оптимальное решение проблемы, избегая  переплат.</text>
                             </div>
