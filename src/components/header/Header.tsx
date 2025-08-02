@@ -27,19 +27,17 @@ export const Header = ({onScrollToRef,
         <div className='xs:pt-[30px] md:flex flex-row'>
             {!isMobile && <div className=''><img className='rounded-r-[30px]' width={'700'} src={sideImg} alt="nasos"/></div>}
             <div className='md:w-[1200px] md:pr-[100px]'>
-                {isMobile &&
-                    <div className='bg-[#4CBFCC] flex flex-row h-[40px] rounded-b-[10px] items-center justify-end text-white'>
-                        <text className='pr-[10px]'><em>+7(931) 233-39-11</em></text>
-                        <img src={whatsapp} alt={'whatsapp'} className='w-[30px]'></img>
-                    </div>}
-                <div className='flex justify-between pl-[10px] md:items-center pr-[10px] md:pr-[55px]'>
-                    <h1 className='text-[56px] md:text-[60px] pt-[30px] font-bold md:pl-[50px] text-[#51D1E0]'>AquaMaster</h1>
-                    {!isMobile &&
-                        <div className='flex items-center pt-[40px]'>
-                            <text className='text-[24px] pr-[10px]'><em>+7(931) 233-39-11</em></text>
-                            <img src={whatsapp} alt={'whatsapp'} className='w-[50px]'></img>
+                <div className='flex justify-between pl-[10px] pr-[10px] md:pr-[55px]'>
+                    <h1 className='text-[56px] md:text-[60px] pt-[50px] font-bold md:pl-[50px] text-[#51D1E0]'>AquaMaster</h1>
+                    <div className='flex items-center justify-center pt-[50px] md:pt-[8px]'>
+                        <div className='flex flex-col'>
+                            <text className='md:text-[24px] text-[12px]'><em>+7(931) 233-39-50</em></text>
+                            <text className='md:text-[24px] text-[12px]'><em>+7(921) 870-87-24</em></text>
                         </div>
-                    }
+                        <div className='flex items-center justify-center pl-[10px]'>
+                            <img className='size-[40px]' src={whatsapp} alt={'whatsapp'}/>
+                        </div>
+                    </div>
                 </div>
                 <div className='flex gap-1 justify-between pt-[20px] pl-[10px] pr-[10px] md:pl-[60px] md:pr-[60px]'>
                     <Button
