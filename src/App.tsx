@@ -12,6 +12,9 @@ import banknote from './assets/banknote.svg'
 import arrow from './assets/arrow.svg'
 import {Header} from "./components/header/Header.tsx";
 import useIsMobile from "./hooks/useIsMobile/useIsMobile.ts";
+import whatsapp from "./assets/whatsapp.svg";
+import telegram from "./assets/telegram.svg";
+import viber from "./assets/viber.svg";
 
 
 
@@ -288,6 +291,12 @@ function App() {
                             <em className='text-[16px] md:text-[24px]'>
                                 +7(931) 233-39-11
                             </em>
+                            <div className='flex flex-row gap-2 items-center justify-center'>
+                                <img src={whatsapp} alt={'whatsapp'} className='size-10'></img>
+                                <img src={telegram} alt={'telegram'} className='size-8 bg-white rounded-full'></img>
+                                <img src={viber} alt={'viber'} className='size-10'></img>
+                            </div>
+
                         </div>
                     </div>
                     {!isMobile && <img src={arrow} alt={'стрелка'}/>}

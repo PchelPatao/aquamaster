@@ -4,6 +4,8 @@ import whatsapp from "../../assets/whatsapp.svg";
 import {Button} from "../button/Button.tsx";
 import line from "../../assets/line.svg";
 import checkMark from "../../assets/checkMark.svg";
+import viber from '../../assets/viber.svg';
+import telegram from '../../assets/telegram.svg';
 import * as React from "react";
 import useIsMobile from "../../hooks/useIsMobile/useIsMobile.ts";
 
@@ -28,16 +30,20 @@ export const Header = ({onScrollToRef,
             {!isMobile && <div className=''><img className='rounded-r-[30px]' width={'700'} src={sideImg} alt="nasos"/></div>}
             <div className='md:w-[1200px] md:pr-[100px]'>
                 {isMobile &&
-                    <div className='bg-[#4CBFCC] flex flex-row h-[40px] rounded-b-[10px] items-center pr-[10px] justify-end text-white'>
-                        <text className='pr-[10px]'><em>+7(931) 233-39-11</em></text>
-                        <img src={whatsapp} alt={'whatsapp'} className='w-[30px]'></img>
+                    <div className=' bg-[#4CBFCC] flex flex-row h-[50px] rounded-b-[10px] items-center pr-[10px] justify-center text-white'>
+                        <text className='pr-[10px] text-[20px]'><em>+7(931) 233-39-11</em></text>
+                        <img src={whatsapp} alt={'whatsapp'} className='size-10'></img>
+                        <img src={telegram} alt={'telegram'} className='size-8 bg-white rounded-full'></img>
+                        <img src={viber} alt={'viber'} className='size-10'></img>
                     </div>}
                 <div className='flex justify-between pl-[10px] pr-[10px] md:pr-[55px]'>
                     <h1 className='text-[56px] md:text-[60px] pt-[30px] md:pt-[50px] font-bold md:pl-[50px] text-[#51D1E0]'>AquaMaster</h1>
                     {!isMobile &&
                         <div className='flex items-center pt-[40px]'>
                             <text className='text-[24px] pr-[10px]'><em>+7(931) 233-39-11</em></text>
-                            <img src={whatsapp} alt={'whatsapp'} className='w-[50px]'></img>
+                            <img src={whatsapp} alt={'whatsapp'} className='size-13'></img>
+                            <img src={telegram} alt={'telegram'} className='size-10'></img>
+                            <div className='pl-[5px]'><img src={viber} alt={'viber'} className='size-10'></img></div>
                         </div>
                     }
                 </div>
