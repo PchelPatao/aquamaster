@@ -5,7 +5,7 @@ type ListItemProps = {
 
 export const ListItem = ({name, price}: ListItemProps) => {
     return (
-        <li className='flex items-center rounded-[90px] justify-between h-[100px] md:text-[20px] text-white bg-[#31919C]' style={{
+        <li className='flex items-center rounded-[40px] md:rounded-[90px] justify-between h-[100px] md:text-[20px] text-white bg-[#31919C]' style={{
             boxShadow: '8px 8px 4px 0 rgba(0, 0, 0, 0.20)'
         }}>
             <>
