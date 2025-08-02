@@ -1,0 +1,21 @@
+<svg width="110.803329" height="115.942017" viewBox="0 0 110.803 115.942" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <clipPath id="clip40_17">
+            <rect id="Денежная купюра" width="110.803329" height="115.942024" fill="white" fill-opacity="0"/>
+        </clipPath>
+    </defs>
+    <g clip-path="url(#clip40_17)">
+        <path id="path" d="M9.23 31.4L101.57 31.4L101.57 89.37L9.23 89.37L9.23 31.4Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+        <path id="path" d="M101.57 31.4L101.57 89.37L9.23 89.37L9.23 31.4L101.57 31.4Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="6.250000" stroke-linejoin="round"/>
+        <path id="path" d="M9.23 50.72C19.43 50.72 27.7 42.07 27.7 31.4L9.23 31.4L9.23 50.72Z" fill="#000000" fill-opacity="0" fill-rule="evenodd"/>
+        <path id="path" d="M27.7 31.4L9.23 31.4L9.23 50.72C19.43 50.72 27.7 42.07 27.7 31.4Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="6.250000" stroke-linejoin="round"/>
+        <path id="path" d="M9.23 70.04C19.43 70.04 27.7 78.69 27.7 89.37L9.23 89.37L9.23 70.04Z" fill="#000000" fill-opacity="0" fill-rule="evenodd"/>
+        <path id="path" d="M27.7 89.37L9.23 89.37L9.23 70.04C19.43 70.04 27.7 78.69 27.7 89.37Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="6.250000" stroke-linejoin="round"/>
+        <path id="path" d="M101.57 70.04L101.57 89.37L83.1 89.37C83.1 78.69 91.37 70.04 101.57 70.04Z" fill="#000000" fill-opacity="0" fill-rule="evenodd"/>
+        <path id="path" d="M101.57 89.37L83.1 89.37C83.1 78.69 91.37 70.04 101.57 70.04L101.57 89.37Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="6.250000" stroke-linejoin="round"/>
+        <path id="path" d="M101.57 50.72C91.37 50.72 83.1 42.07 83.1 31.4L101.57 31.4L101.57 50.72Z" fill="#000000" fill-opacity="0" fill-rule="evenodd"/>
+        <path id="path" d="M83.1 31.4L101.57 31.4L101.57 50.72C91.37 50.72 83.1 42.07 83.1 31.4Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="6.250000" stroke-linejoin="round"/>
+        <path id="path" d="M55.4 74.87C61.77 74.87 66.94 68.39 66.94 60.38C66.94 52.38 61.77 45.89 55.4 45.89C49.02 45.89 43.85 52.38 43.85 60.38C43.85 68.39 49.02 74.87 55.4 74.87Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+        <path id="path" d="M66.94 60.38C66.94 52.38 61.77 45.89 55.4 45.89C49.02 45.89 43.85 52.38 43.85 60.38C43.85 68.39 49.02 74.87 55.4 74.87C61.77 74.87 66.94 68.39 66.94 60.38Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="6.250000" stroke-linejoin="round"/>
+    </g>
+</svg>

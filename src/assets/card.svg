@@ -1,0 +1,17 @@
+<svg width="110.803345" height="115.942017" viewBox="0 0 110.803 115.942" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <clipPath id="clip35_100">
+            <rect id="Оплата картой" width="110.803329" height="115.942024" fill="white" fill-opacity="0"/>
+        </clipPath>
+    </defs>
+    <g clip-path="url(#clip35_100)">
+        <path id="path" d="M11.89 38.64L11.86 38.64C10.51 37.52 10.32 35.59 11.43 34.24C12.55 32.89 14.48 32.7 15.83 33.82L15.84 33.84L11.89 38.64ZM37.34 38.68L37.31 38.69C35.93 37.6 35.7 35.67 36.78 34.3C37.86 32.92 39.79 32.69 41.17 33.77L41.17 33.8L37.34 38.68Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+        <path id="path" d="M13.85 36.23L44.71 61.68C47.32 64 52.69 67.63 57.71 62.8C62.99 57.7 58.86 51.93 57.71 50.72L39.24 36.23" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="6.250000" stroke-linejoin="round" stroke-linecap="round"/>
+        <path id="path" d="M9.25 22.42L9.23 22.44C7.48 22.44 6.1 21.07 6.1 19.32C6.1 17.57 7.48 16.19 9.23 16.19L9.25 16.21L9.25 22.42ZM89.84 41.21L89.87 41.21C91.14 42.42 91.18 44.36 89.98 45.63C88.77 46.9 86.83 46.94 85.56 45.74L85.56 45.71L89.84 41.21Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+        <path id="path" d="M9.23 19.32L62.32 19.32L87.71 43.47" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="6.250000" stroke-linejoin="round" stroke-linecap="round"/>
+        <path id="path" d="M20.79 82.81L20.77 82.83C19.02 82.83 17.64 81.45 17.65 79.7C17.65 77.95 19.02 76.58 20.77 76.58L20.79 76.6L20.79 82.81ZM101.55 76.65L101.57 76.63C103.32 76.63 104.69 78 104.69 79.75C104.69 81.5 103.31 82.88 101.56 82.88L101.54 82.86L101.55 76.65Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+        <path id="path" d="M20.77 79.71L101.57 79.75" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="6.250000" stroke-linejoin="round" stroke-linecap="round"/>
+        <path id="path" d="M17.67 43.49L17.65 43.47C17.65 41.72 19.02 40.35 20.77 40.35C22.52 40.35 23.9 41.72 23.9 43.47L23.88 43.49L17.67 43.49ZM50.8 46.58L50.78 46.6C49.03 46.6 47.66 45.22 47.66 43.47C47.66 41.72 49.03 40.35 50.78 40.35L50.8 40.37L50.8 46.58Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+        <path id="path" d="M20.77 43.47L20.77 96.61L101.57 96.61L101.57 43.47L50.78 43.47" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="6.250000" stroke-linejoin="round" stroke-linecap="round"/>
+    </g>
+</svg>
