@@ -80,7 +80,7 @@ function App() {
                             boxShadow: '8px 8px 4px 0 rgba(0, 0, 0, 0.25)'
                         }}>
                             <div className='flex flex-col justify-center items-center w-full h-full p-5'>
-                                <img src={success} className='w-[60px]' alt={'Качество'}></img>
+                                <img src={success} className='w-[60px] md:w-[80px]' alt={'Качество'}></img>
                                 <text className=' text-[16px] md:text-[34px]'>Качество</text>
                                 <text className=' text-[12px] md:text-[24px]'>Решаем любые проблемы со скважинами самыми оптимальными способами.</text>
                             </div>
@@ -89,7 +89,7 @@ function App() {
                             boxShadow: '8px 8px 4px 0 rgba(0, 0, 0, 0.25)'
                         }}>
                             <div className='flex flex-col justify-center items-center w-full h-full p-5'>
-                                <img src={card} className='w-[60px]' alt={'карточка'}></img>
+                                <img src={card} className='w-[60px] md:w-[80px]' alt={'карточка'}></img>
                                 <text className=' text-[16px] md:text-[34px]'>Без предоплат</text>
                                 <text className=' text-[12px] md:text-[24px]'>Фиксированная договором цена. Оплата по факту выполнения работ.</text>
                             </div>
@@ -100,7 +100,7 @@ function App() {
                         boxShadow: '8px 8px 4px 0 rgba(0, 0, 0, 0.25)'
                     }}>
                         <div className='flex flex-col justify-center items-center w-full h-full p-5'>
-                            <img src={shield} className='w-[60px]' alt={'щит'}></img>
+                            <img src={shield} className='w-[60px] md:w-[80px]' alt={'щит'}></img>
                             <text className=' text-[16px] md:text-[34px]'>Гарантия</text>
                             <text className=' text-[12px] md:text-[24px]'>Мы предоставляем гарантию в 1 год на все выполненные нами работы.</text>
                         </div>
@@ -109,7 +109,7 @@ function App() {
                             boxShadow: '8px 8px 4px 0 rgba(0, 0, 0, 0.25)'
                         }}>
                             <div className='flex flex-col justify-center items-center w-full h-full p-5'>
-                                <img src={banknote} className='w-[60px]' alt={'купюра'}></img>
+                                <img src={banknote} className='w-[60px] md:w-[80px]' alt={'купюра'}></img>
                                 <text className=' text-[16px] md:text-[34px]'>Экономия</text>
                                 <text className=' text-[12px] md:text-[24px]'>Мы всегда подбираем оптимальное решение проблемы, избегая  переплат.</text>
                             </div>
