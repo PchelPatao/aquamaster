@@ -77,8 +77,8 @@ function App() {
                 <HeaderBlock>
                     <h2>ПОЧЕМУ СЛЕДУЕТ ВЫБРАТЬ ИМЕННО НАС?</h2>
                 </HeaderBlock>
-                <div className='flex pt-[20px] justify-center gap-[20px] md:gap-[50px] md:pl-[80px] md:w-[1700px] md:h-[590px]'>
-                     <div className='pl-[14px] flex flex-col md:flex-row md:gap-[50px] flex-1 gap-[20px]'>
+                {isMobile ? <div className='flex pt-[20px] justify-center gap-[20px]'>
+                    <div className='pl-[14px] flex flex-col md:flex-row flex-1 gap-[20px]'>
                         <div className=' bg-[#4CBFCC] text-white size-[190px] md:size-[400px] rounded-[40px] md:rounded-[90px] ' style={{
                             boxShadow: '8px 8px 4px 0 rgba(0, 0, 0, 0.25)'
                         }}>
@@ -100,13 +100,13 @@ function App() {
                     </div>
                     <div className='flex flex-col md:flex-row flex-1 gap-[20px] md:gap-[50px] pr-[14px]'>
                         <div className=' bg-[#4CBFCC] text-white rounded-[40px] md:size-[400px] size-[190px] md:rounded-[90px]' style={{
-                        boxShadow: '8px 8px 4px 0 rgba(0, 0, 0, 0.25)'
-                    }}>
-                        <div className='flex flex-col justify-center items-center w-full h-full p-5'>
-                            <img src={shield} className='w-[60px] md:w-[80px]' alt={'щит'}></img>
-                            <text className=' text-[16px] md:text-[34px]'>Гарантия</text>
-                            <text className=' text-[12px] md:text-[24px]'>Мы предоставляем гарантию в 1 год на все выполненные нами работы.</text>
-                        </div>
+                            boxShadow: '8px 8px 4px 0 rgba(0, 0, 0, 0.25)'
+                        }}>
+                            <div className='flex flex-col justify-center items-center w-full h-full p-5'>
+                                <img src={shield} className='w-[60px] md:w-[80px]' alt={'щит'}></img>
+                                <text className=' text-[16px] md:text-[34px]'>Гарантия</text>
+                                <text className=' text-[12px] md:text-[24px]'>Мы предоставляем гарантию в 1 год на все выполненные нами работы.</text>
+                            </div>
                         </div>
                         <div className=' bg-[#4CBFCC] text-white rounded-[40px] md:size-[400px] size-[190px] md:rounded-[90px]' style={{
                             boxShadow: '8px 8px 4px 0 rgba(0, 0, 0, 0.25)'
@@ -119,6 +119,46 @@ function App() {
                         </div>
                     </div>
                 </div>
+                :
+                    <div className='flex flex-row justify-center h-[590px] gap-[50px] pt-[50px]'>
+                            <div className=' bg-[#4CBFCC] text-white size-[190px] md:size-[400px] rounded-[40px] md:rounded-[90px] ' style={{
+                                boxShadow: '8px 8px 4px 0 rgba(0, 0, 0, 0.25)'
+                            }}>
+                                <div className='flex flex-col justify-center items-center w-full h-full p-5'>
+                                    <img src={success} className='w-[60px] md:w-[80px]' alt={'Качество'}></img>
+                                    <text className=' text-[16px] md:text-[34px]'>Качество</text>
+                                    <text className=' text-[12px] md:text-[24px]'>Решаем любые проблемы со скважинами самыми оптимальными способами.</text>
+                                </div>
+                            </div>
+                            <div className=' bg-[#4CBFCC] text-white rounded-[40px] md:size-[400px] size-[190px] md:rounded-[90px]' style={{
+                                boxShadow: '8px 8px 4px 0 rgba(0, 0, 0, 0.25)'
+                            }}>
+                                <div className='flex flex-col justify-center items-center w-full h-full p-5'>
+                                    <img src={card} className='w-[60px] md:w-[80px]' alt={'карточка'}></img>
+                                    <text className=' text-[16px] md:text-[34px]'>Без предоплат</text>
+                                    <text className=' text-[12px] md:text-[24px]'>Фиксированная договором цена. Оплата по факту выполнения работ.</text>
+                                </div>
+                            </div>
+                            <div className=' bg-[#4CBFCC] text-white rounded-[40px] md:size-[400px] size-[190px] md:rounded-[90px]' style={{
+                                boxShadow: '8px 8px 4px 0 rgba(0, 0, 0, 0.25)'
+                            }}>
+                                <div className='flex flex-col justify-center items-center w-full h-full p-5'>
+                                    <img src={shield} className='w-[60px] md:w-[80px]' alt={'щит'}></img>
+                                    <text className=' text-[16px] md:text-[34px]'>Гарантия</text>
+                                    <text className=' text-[12px] md:text-[24px]'>Мы предоставляем гарантию в 1 год на все выполненные нами работы.</text>
+                                </div>
+                            </div>
+                            <div className=' bg-[#4CBFCC] text-white rounded-[40px] md:size-[400px] size-[190px] md:rounded-[90px]' style={{
+                                boxShadow: '8px 8px 4px 0 rgba(0, 0, 0, 0.25)'
+                            }}>
+                                <div className='flex flex-col justify-center items-center w-full h-full p-5'>
+                                    <img src={banknote} className='w-[60px] md:w-[80px]' alt={'купюра'}></img>
+                                    <text className=' text-[16px] md:text-[34px]'>Экономия</text>
+                                    <text className=' text-[12px] md:text-[24px]'>Мы всегда подбираем оптимальное решение проблемы, избегая  переплат.</text>
+                                </div>
+                            </div>
+                    </div>
+                }
             </div>
 
             <div ref={secondBlockRef}>
@@ -127,9 +167,9 @@ function App() {
                 </HeaderBlock>
                 <div className='flex flex-col md:flex-row'>
                     <div className='flex flex-row md:flex-col pl-[10px] pr-[20px] pt-[20px] md:pt-[12px] justify-between md:justify-start gap-[10px] md:gap-[20px] '>
-                         <Button isActive={activeButton === 'capital'} name={'Капитальный ремонт'} onClick={handleCapitalClick}  ></Button>
-                         <Button isActive={activeButton === 'underground'} name={'Подземный ремонт '} onClick={handleUndergroundClick}   ></Button>
-                         <Button isActive={activeButton === 'current'} name={'Текущий ремонт'} onClick={handleCurrentClick}  ></Button>
+                         <Button isActive={activeButton === 'capital'} className='md:h-[100px]' name={'Капитальный ремонт'} onClick={handleCapitalClick}  ></Button>
+                         <Button isActive={activeButton === 'underground'} className='md:h-[100px]' name={'Подземный ремонт '} onClick={handleUndergroundClick}   ></Button>
+                         <Button isActive={activeButton === 'current'} className='md:h-[100px]' name={'Текущий ремонт'} onClick={handleCurrentClick}  ></Button>
                     </div>
                     <div className='flex pt-[10px] pl-[10px] md:pl-[50px] pr-[10px] md:pr-[100px]'>
                         {showCapitalText && (

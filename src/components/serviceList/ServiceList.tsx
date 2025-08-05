@@ -133,13 +133,13 @@ export const ServiceList = () => {
             <div className='flex flex-row md:flex-col gap-[10px] md:gap-[20px]'>
                 <div className='flex flex-col w-full gap-[10px] md:gap-[20px] items-center'>
                     <Button
-                        className='w-[160px] h-[50px]'
+                        className='w-[160px] h-[50px] md:h-[100px]'
                         name={'Замена насоса в скважине'}
                         onClick={() => setActiveButton('change')}
                         isActive={activeButton === 'change'}
                     />
                     <Button
-                        className='w-[160px] h-[50px]'
+                        className='w-[160px] h-[50px] md:h-[100px]'
                         name={'Очистка'}
                         onClick={() => setActiveButton('cleaning')}
                         isActive={activeButton === 'cleaning'}
@@ -148,13 +148,13 @@ export const ServiceList = () => {
                 <div className='flex flex-col w-full gap-[10px] md:gap-[20px] items-center'>
                     <Button
                         name={'Ремонт скважины'}
-                        className='w-[160px] h-[50px]'
+                        className='w-[160px] h-[50px] md:h-[100px]'
                         onClick={() => setActiveButton('repair')}
                         isActive={activeButton === 'repair'}
                     />
                     <Button
                         name={'Обустройство'}
-                        className='w-[160px] h-[50px]'
+                        className='w-[160px] h-[50px] md:h-[100px] '
                         onClick={() => setActiveButton('arrangement')}
                         isActive={activeButton === 'arrangement'}
                     />
