@@ -38,7 +38,7 @@ export const DeliverySection: React.FC<DeliverySectionProps> = ({
     handlePumpAquarioText,
     handleInstallationClick,
     handleMaintenanceClick,
-    handlePumpStationClick,
+    // handlePumpStationClick,
     handleAccumulatorClick,
     handleComplectClick,
     elementRef,
