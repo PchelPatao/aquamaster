@@ -1,7 +1,7 @@
 import * as React from "react";
 
 type TextRepairProps = {
-    mainText: string;
+    mainText?: string;
     category?: string;
     list?: React.ReactNode
 }
@@ -15,12 +15,18 @@ export const TextRepair = ({mainText, category, list}: TextRepairProps) => {
                 <div className=''>
                     {mainText}
                 </div>
-                <div className='md:pt-[30px]'>
-                    {category}
-                </div>
-                <div className='md:pt-[20px]'>
-                    {list}
-                </div>
+                {category && (
+                    <div className='md:pt-[30px]'>
+                        {category}
+                    </div>
+                )}
+                {mainText || category ? (
+                    <div className='md:pt-[20px]'>
+                        {list}
+                    </div>
+                ) : <div className=''>
+                        {list}
+                    </div>}
 
             </div>
         </div>

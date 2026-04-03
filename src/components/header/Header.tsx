@@ -14,6 +14,7 @@ interface HeaderProps {
     firstItemRef: React.RefObject<HTMLDivElement | null>;
     secondBlockRef: React.RefObject<HTMLDivElement | null>;
     thirdBlockRef: React.RefObject<HTMLDivElement | null>;
+    deliveryBlockRef: React.RefObject<HTMLDivElement | null>;
     fifthBlockRef: React.RefObject<HTMLDivElement | null>;
 }
 
@@ -21,6 +22,7 @@ export const Header = ({onScrollToRef,
     firstItemRef,
     secondBlockRef,
     thirdBlockRef,
+    deliveryBlockRef,
     fifthBlockRef,
 }: HeaderProps) => {
     const isMobile = useIsMobile()
@@ -30,35 +32,43 @@ export const Header = ({onScrollToRef,
             {!isMobile && <div className=''><img className='rounded-r-[30px]' width={'700'} src={sideImg} alt="nasos"/></div>}
             <div className='md:w-[1200px] md:pr-[100px]'>
                 {isMobile &&
-                    <div className=' bg-[#4CBFCC] flex flex-row h-[50px] rounded-b-[10px] items-center pr-[10px] justify-center text-white'>
-                        <text className='pr-[10px] text-[20px]'><em>+7(931) 233-39-11</em></text>
+                    <div className='fixed top-0 left-0 right-0 z-[100] bg-[#4CBFCC] flex flex-row h-[50px] rounded-b-[10px] items-center pr-[10px] justify-center text-white'>
+                        <text className='pr-[10px] text-[20px]'><em><a href='tel:+7(931)2333911'>+7(931) 233-39-11</a></em></text>
                         <img src={whatsapp} alt={'whatsapp'} className='size-10'></img>
                         <img src={telegram} alt={'telegram'} className='size-8 bg-white rounded-full'></img>
                         <img src={viber} alt={'viber'} className='size-10'></img>
                     </div>}
                 <div className='flex justify-between pl-[10px] pr-[10px] md:pr-[55px]'>
-                    <h1 className='text-[56px] md:text-[60px] pt-[30px] md:pt-[50px] font-bold md:pl-[50px] text-[#51D1E0]'>AquaMaster</h1>
+                    <h1 className='text-[56px] md:text-[60px] pt-[40px] md:pt-[50px] font-bold md:pl-[50px] text-[#51D1E0]'>AquaMaster</h1>
                     {!isMobile &&
                         <div className='flex items-center pt-[40px]'>
-                            <text className='text-[24px] pr-[10px]'><em>+7(931) 233-39-11</em></text>
+                            <text className='text-[24px] pr-[10px]'><em><a href='tel:+7(931)2333911'>+7(931) 233-39-11</a></em></text>
                             <img src={whatsapp} alt={'whatsapp'} className='size-13'></img>
                             <img src={telegram} alt={'telegram'} className='size-10'></img>
                             <div className='pl-[5px]'><img src={viber} alt={'viber'} className='size-10'></img></div>
                         </div>
                     }
                 </div>
-                <div className='flex gap-1 justify-between pt-[20px] pl-[10px] pr-[10px] md:pl-[60px] md:pr-[60px]'>
+                <div className='grid grid-cols-2 gap-4 pt-[20px] pl-[10px] pr-[10px] md:pl-[60px] md:pr-[60px] justify-items-center'>
                     <Button
                         onClick={() =>  firstItemRef.current && onScrollToRef(firstItemRef as React.RefObject<HTMLDivElement>)}
                         name={"Почему мы?"}
+                        className='w-[200px] text-[16px] md:h-[70px]'
                     />
                     <Button
                         onClick={() => thirdBlockRef.current && onScrollToRef(thirdBlockRef as React.RefObject<HTMLDivElement>)}
                         name={"Наши услуги"}
+                        className='w-[200px] text-[16px] md:h-[70px]'
+                    />
+                    <Button
+                        onClick={() => deliveryBlockRef.current && onScrollToRef(deliveryBlockRef as React.RefObject<HTMLDivElement>)}
+                        name={"Доставка"}
+                        className='w-[200px] text-[16px] md:h-[70px]'
                     />
                     <Button
                         onClick={() => fifthBlockRef.current && onScrollToRef(fifthBlockRef as React.RefObject<HTMLDivElement>)}
                         name={"Схема работы"}
+                        className='w-[200px] text-[16px] md:h-[70px]'
                     />
                 </div>
                 <img src={line} alt={'line'} className=' pt-[29px]'/>
