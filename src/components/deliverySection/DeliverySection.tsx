@@ -4,6 +4,7 @@ import { HeaderBlock } from '../headerBlock/HeaderBlock';
 import { TextRepair } from '../textRepair/TextRepair';
 import { FadeInWrapper } from '../fadeInWrapper/FadeInWrapper';
 import useIsMobile from '../../hooks/useIsMobile/useIsMobile';
+import { PhoneLink } from '../phoneLink/PhoneLink';
 
 interface DeliverySectionProps {
     showDeliveryText: boolean;
@@ -179,7 +180,7 @@ export const DeliverySection: React.FC<DeliverySectionProps> = ({
                         {(showDeliveryText || showInstallationText || showMaintenanceText || showPumpStationText || showAccumulatorText || showComplectText) && (
                             <div style={{ boxShadow: '8px 8px 4px 0 rgba(0, 0, 0, 0.25)' }} className='w-full mt-[20px] md:mt-[30px] flex flex-col items-center md:flex-row md:justify-center md:items-center bg-[#31919C] rounded-[40px] p-[20px] text-white'>
                                 <div className='flex flex-col md:flex-row items-center'>
-                                    <text className='text-[20px] md:text-[20px] mb-[10px] md:mb-0 md:mr-[10px]'>Для уточнения наличия товара и стоимости доставки, просьба связаться с менеджером: <a href='tel:+7(931)2333911'>+7(931) 233-39-11</a></text> 
+                                    <text className='text-[20px] md:text-[20px] mb-[10px] md:mb-0 md:mr-[10px]'>Для уточнения наличия товара и стоимости доставки, просьба связаться с менеджером: <PhoneLink phone='+7(931)2333911'>+7(931) 233-39-11</PhoneLink></text> 
                                 </div>
                             </div>
                         )}

@@ -8,6 +8,7 @@ import viber from '../../assets/viber.svg';
 import telegram from '../../assets/telegram.svg';
 import * as React from "react";
 import useIsMobile from "../../hooks/useIsMobile/useIsMobile.ts";
+import { PhoneLink } from "../phoneLink/PhoneLink.tsx";
 
 interface HeaderProps {
     onScrollToRef: (ref: React.RefObject<HTMLDivElement>) => void;
@@ -33,7 +34,7 @@ export const Header = ({onScrollToRef,
             <div className='md:w-[1200px] md:pr-[100px]'>
                 {isMobile &&
                     <div className='fixed top-0 left-0 right-0 z-[100] bg-[#4CBFCC] flex flex-row h-[50px] rounded-b-[10px] items-center pr-[10px] justify-center text-white'>
-                        <text className='pr-[10px] text-[20px]'><em><a href='tel:+7(931)2333911'>+7(931) 233-39-11</a></em></text>
+                        <text className='pr-[10px] text-[20px]'><em><PhoneLink phone='+7(931)2333911'>+7(931) 233-39-11</PhoneLink></em></text>
                         <img src={whatsapp} alt={'whatsapp'} className='size-10'></img>
                         <img src={telegram} alt={'telegram'} className='size-8 bg-white rounded-full'></img>
                         <img src={viber} alt={'viber'} className='size-10'></img>
@@ -42,7 +43,7 @@ export const Header = ({onScrollToRef,
                     <h1 className='text-[56px] md:text-[60px] pt-[40px] md:pt-[50px] font-bold md:pl-[50px] text-[#51D1E0]'>AquaMaster</h1>
                     {!isMobile &&
                         <div className='flex items-center pt-[40px]'>
-                            <text className='text-[24px] pr-[10px]'><em><a href='tel:+7(931)2333911'>+7(931) 233-39-11</a></em></text>
+                            <text className='text-[24px] pr-[10px]'><em><PhoneLink phone='+7(931)2333911'>+7(931) 233-39-11</PhoneLink></em></text>
                             <img src={whatsapp} alt={'whatsapp'} className='size-13'></img>
                             <img src={telegram} alt={'telegram'} className='size-10'></img>
                             <div className='pl-[5px]'><img src={viber} alt={'viber'} className='size-10'></img></div>

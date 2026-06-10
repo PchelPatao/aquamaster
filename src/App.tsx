@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import * as React from "react";
 import { useRef, useState} from 'react'
 import { Button } from "./components/button/Button.tsx";
