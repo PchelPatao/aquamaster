@@ -8,6 +8,15 @@ interface PhoneLinkProps {
 
 const YANDEX_METRIKA_ID = 109746116;
 
+const normalizePhone = (value: string) => value.replace(/[^\d+]/g, '');
+const formatPhoneDisplay = (value: string) => {
+  const digits = normalizePhone(value).replace('+', '');
+  if (digits.startsWith('7') && digits.length === 11) {
+    return `+7 (${digits.slice(1, 4)}) ${digits.slice(4, 7)}-${digits.slice(7, 9)}-${digits.slice(9)}`;
+  }
+  return value;
+};
+
 export const PhoneLink: React.FC<PhoneLinkProps> = ({ phone, children, className }) => {
   const handleClick = useCallback(() => {
     if (typeof window !== 'undefined' && typeof window.ym === 'function') {
@@ -15,9 +24,12 @@ export const PhoneLink: React.FC<PhoneLinkProps> = ({ phone, children, className
     }
   }, []);
 
+  const normalizedPhone = normalizePhone(phone);
+  const displayText = typeof children === 'string' ? children : formatPhoneDisplay(phone);
+
   return (
-    <a href={`tel:${phone}`} className={className} onClick={handleClick}>
-      {children}
+    <a href={`tel:${normalizedPhone}`} className={className} onClick={handleClick}>
+      {displayText}
     </a>
   );
 };
