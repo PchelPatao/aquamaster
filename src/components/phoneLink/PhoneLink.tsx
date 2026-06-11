@@ -17,15 +17,29 @@ const formatPhoneDisplay = (value: string) => {
   return value;
 };
 
-export const PhoneLink: React.FC<PhoneLinkProps> = ({ phone, children, className }) => {
-  const handleClick = useCallback(() => {
-    if (typeof window !== 'undefined' && typeof window.ym === 'function') {
-      window.ym(YANDEX_METRIKA_ID, 'reachGoal', 'phone_click');
-    }
-  }, []);
+const isMobileDevice = () => {
+  if (typeof navigator === 'undefined') {
+    return false;
+  }
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+};
 
+export const PhoneLink: React.FC<PhoneLinkProps> = ({ phone, children, className }) => {
   const normalizedPhone = normalizePhone(phone);
   const displayText = typeof children === 'string' ? children : formatPhoneDisplay(phone);
+
+  const handleClick = useCallback(
+    (event: React.MouseEvent<HTMLAnchorElement>) => {
+      if (typeof window !== 'undefined' && typeof window.ym === 'function') {
+        window.ym(YANDEX_METRIKA_ID, 'reachGoal', 'phone_click');
+      }
+
+      if (!isMobileDevice()) {
+        event.preventDefault();
+      }
+    },
+    [],
+  );
 
   return (
     <a href={`tel:${normalizedPhone}`} className={className} onClick={handleClick}>
